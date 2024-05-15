@@ -13,7 +13,6 @@ def read_file(file_path):
         return file.read()
 
 # Load the prompt from prompt.txt
-test_overview = read_file('company_overview.txt')
 
 # st.title("Industry ")
 if 'selected_category' not in st.session_state:
@@ -55,12 +54,12 @@ with st.expander("Readme"):
     - Unsure which company to pick? [Try one from here](https://en.wikipedia.org/wiki/List_of_companies_of_Singapore#Notable_firms).
 
     ##### Why TCFD specifically?
-    - The TCFD framework aligns business incentives with climate impact.
-    - It frames climate issues in terms of risks and opportunities that impact the business, exec-friendly language.
+    - The TCFD framework aligns business incentives with climate impact 
+    - It frames climate issues in terms of risks and opportunities that impact the business; a language familiar to execs and decision makers.
     - Companies act in line with their self-interests to mitigate risks, capture opportunities, and reduce their impact on the climate.
     """)
 
-st.markdown("---")
+st.markdown('<hr style="border: 1px solid lightgrey;">', unsafe_allow_html=True)
 # Company details inputs
 company_name = st.text_input("Enter a company name", placeholder="e.g. Cold storage")
 primary_location = st.text_input("Enter the primary country of operation", placeholder="e.g. Singapore")
@@ -123,7 +122,6 @@ if company_name and primary_location and industry and generate_overview:
         )
         company_overview = st.write_stream(overview_response)
         st.session_state.company_overview = company_overview
-        # st.write(test_overview)
 
 if st.session_state.initial_research_completed and st.session_state.company_overview:
 # if st.session_state.company_overview:
