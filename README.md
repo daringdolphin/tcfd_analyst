@@ -10,10 +10,6 @@ Shift the focus on climate action by
 - Better performance observed with larger companies with an established online presence.
 - Unsure which company to pick? [Try one from here](https://en.wikipedia.org/wiki/List_of_companies_of_Singapore#Notable_firms).
 
-### Why did I build this?
-- To put the focus on climate action by reducing friction to reporting.
-- To promote climate action by communicating how businesses are impacted by climate.
-
 ### Why TCFD specifically?
 - The TCFD framework aligns business incentives with climate impact.
 - It frames climate issues in terms of risks and opportunities that impact the business, exec-friendly language.
